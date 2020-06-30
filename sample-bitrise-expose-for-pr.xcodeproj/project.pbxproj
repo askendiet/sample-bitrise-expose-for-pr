@@ -220,7 +220,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "printenv\n";
+			shellScript = "echo exposed_secret_value=${exposed_secret_value}\necho exposed_secret_value=${exposed_secret_value} | rev\necho unexposed_secret_value=${unexposed_secret_value}\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
